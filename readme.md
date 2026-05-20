@@ -20,9 +20,6 @@ This repository analyzes trader performance relative to Fear/Greed market sentim
 
 1. Open a terminal in the project root:
 
-```bash
-cd "m:\Trader Performance vs Market Sentiment Analysis"
-```
 
 2. Create and activate a virtual environment.
 
