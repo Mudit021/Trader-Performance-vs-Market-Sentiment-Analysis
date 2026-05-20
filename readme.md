@@ -119,7 +119,7 @@ pip install -r requirements.txt
 ## Run commands summary
 
 ```bash
-cd "m:\Trader Performance vs Market Sentiment Analysis"
+cd "Trader Performance vs Market Sentiment Analysis"
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1  # Windows PowerShell
 pip install -r requirements.txt
