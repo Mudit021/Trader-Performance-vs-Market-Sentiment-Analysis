@@ -77,6 +77,25 @@ The Streamlit app includes:
 - **Trader segments** — KMeans behavioral clusters of traders and cluster exploration
 - **Model & predictions** — next-day profit prediction results and strategy rules of thumb
 
+## Charts and graphs
+
+The dashboard renders these charts:
+
+- **Average daily PnL by sentiment** — bar chart comparing Fear vs Greed average daily profit
+- **Daily PnL distribution by sentiment** — box plot showing PnL spread across Fear and Greed days
+- **Average trades per day by sentiment** — bar chart for daily trade volume by sentiment
+- **Win rate by sentiment** — bar chart comparing trader win rates across Fear and Greed days
+- **Trader cluster scatter plot** — scatter chart of trader clusters by trade frequency, win rate, and trade size
+- **Model prediction summary** — accuracy metric, coefficient table, and sentiment PnL bar chart
+
+These charts are available when you run the dashboard with `streamlit run app.py`.
+
+## Screenshot gallery
+
+![Sentiment overview](images/sentiment_overview_bars.png)
+
+![Daily PnL distribution](images/daily_pnl_distribution.png)
+
 ## Summary
 
 ### Methodology
@@ -96,12 +115,6 @@ The Streamlit app includes:
 - During Fear days, favor traders with stronger win rates and balanced long/short exposure to capture upside while limiting risk.
 - During Greed days, reduce exposure to high-frequency and inconsistent traders, since this sentiment is associated with more downside tail risk.
 - Use trader clusters and account segments to tailor allocation rules rather than applying a single strategy to all traders.
-
-## Data assumptions
-
-- `fear_greed_index.csv` must contain a UNIX-style `timestamp` column and daily sentiment labels.
-- `historical_data.csv` must contain a `Timestamp IST` column in `DD-MM-YYYY HH:MM` format and a numeric `Closed PnL` column.
-- The current dataset does not include an explicit `Leverage` column. If leverage is required, add it to `historical_data.csv` and update the dashboard/notebook logic accordingly.
 
 ## Troubleshooting
 
