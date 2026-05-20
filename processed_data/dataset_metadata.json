@@ -1,0 +1,36 @@
+{
+    "fear_greed": {
+        "rows": 2644,
+        "cols": 4,
+        "missing": {
+            "timestamp": 0,
+            "value": 0,
+            "classification": 0,
+            "date": 0
+        },
+        "duplicates": 0
+    },
+    "historical_data": {
+        "rows": 211224,
+        "cols": 16,
+        "missing": {
+            "Account": 0,
+            "Coin": 0,
+            "Execution Price": 0,
+            "Size Tokens": 0,
+            "Size USD": 0,
+            "Side": 0,
+            "Timestamp IST": 0,
+            "Start Position": 0,
+            "Direction": 0,
+            "Closed PnL": 0,
+            "Transaction Hash": 0,
+            "Order ID": 0,
+            "Crossed": 0,
+            "Fee": 0,
+            "Trade ID": 0,
+            "Timestamp": 0
+        },
+        "duplicates": 0
+    }
+}

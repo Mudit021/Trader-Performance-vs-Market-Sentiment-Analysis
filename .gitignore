@@ -1,0 +1,14 @@
+# Raw and processed large data files
+historical_data.csv
+processed_data/aligned_trades.parquet
+
+# Python / Jupyter caches
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Local IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
